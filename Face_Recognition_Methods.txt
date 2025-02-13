@@ -1,0 +1,32 @@
+1️⃣ Deep Learning-Based Approaches
+These methods use neural networks to extract features from faces and classify them.
+
+(a) Embedding Matching (FaceNet, ArcFace, DeepFace, etc.) ✅
+Converts faces into 128/512-dimensional vectors and compares distances.
+Used in FaceNet, ArcFace, DeepFace, and Dlib’s face recognition models.
+✅ Pros: Highly accurate, handles variations in lighting, pose, and expressions.
+❌ Cons: Needs a good pre-trained model and high-quality images.
+
+(b) CNN-based Classification 🧠
+Instead of comparing embeddings, train a Convolutional Neural Network (CNN) model to classify faces into known categories.
+Model predicts which student the face belongs to.
+✅ Pros: Works well when trained on a large dataset.
+❌ Cons: Requires training a model with labeled data for every new student.
+
+Example Models:
+
+ResNet50, VGG16, MobileNet trained on face datasets like CelebA, LFW.
+
+
+3️⃣ Hybrid Approaches
+Some modern systems combine deep learning and traditional ML for better accuracy.
+
+(a) Siamese Networks (One-shot Learning) 🏆
+Instead of training for all students, it learns to compare pairs of faces.
+Useful for cases where new faces frequently appear.
+✅ Pros: Works with very few training images.
+❌ Cons: Training is slow and computationally expensive.
+
+📌 Used in: OpenFace, DeepFace
+
+
