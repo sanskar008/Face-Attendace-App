@@ -47,7 +47,7 @@ width = int(classroom_image_cv.shape[1] * scale_percent / 100)
 height = int(classroom_image_cv.shape[0] * scale_percent / 100)
 resized_image = cv2.resize(classroom_image_cv, (width, height))
 
-# Show resized image
+
 cv2.imshow("Classroom Face Recognition", resized_image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
